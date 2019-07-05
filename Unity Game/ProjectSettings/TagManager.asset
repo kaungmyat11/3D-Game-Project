@@ -8,6 +8,7 @@ TagManager:
   - MovingGround
   - Crystal
   - Reward
+  - CheckPoint
   layers:
   - Default
   - TransparentFX

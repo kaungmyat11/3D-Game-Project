@@ -32,12 +32,13 @@ public class PlayerController : MonoBehaviour
     Vector3 playerMovement;
     Vector3 desiredForward;
     Vector3 Rotation;
-    Vector3 checkPoint;
+    public Vector3 checkPoint;
 
     Quaternion playerRotation = Quaternion.identity;
 
     private void Start()
     {
+        dieText.SetActive(false);
         playerRb = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         checkPoint = gameObject.transform.position;
@@ -77,8 +78,8 @@ public class PlayerController : MonoBehaviour
             //animator.SetTrigger("doJump");
             playerRb.AddForce(Vector3.up * verticalSpeed, ForceMode.Impulse);
             canJump = false;
-            power--;
-            DisplayPower();
+            power -= 1;
+            DisplayPower(power);
         }
         else if (!isGrounded)
         {
@@ -170,7 +171,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Collide with crystal");
             power++;
-            DisplayPower();
+            DisplayPower(power);
             Destroy(other.gameObject);
         }
 
@@ -240,8 +241,9 @@ public class PlayerController : MonoBehaviour
     //    SceneManager.LoadScene(1);
     //}
 
-    private void DisplayPower()
+    private void DisplayPower(float p)
     {
-        DBjump.text = "DB Jump x" + power;
+        Debug.Log(p + "is Left");
+        DBjump.text = "DB Jump x" + p;
     }
 }

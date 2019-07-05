@@ -79,8 +79,8 @@ public class JoyStickController : MonoBehaviour
             //animator.SetTrigger("doJump");
             playerRb.AddForce(Vector3.up * verticalSpeed, ForceMode.Impulse);
             canJump = false;
-            power--;
-            DisplayPower();
+            power -= 1;
+            DisplayPower(power);
         }
         else if (!isGrounded)
         {
@@ -172,7 +172,7 @@ public class JoyStickController : MonoBehaviour
         {
             Debug.Log("Collide with crystal");
             power++;
-            DisplayPower();
+            DisplayPower(power);
             Destroy(other.gameObject);
         }
 
@@ -242,8 +242,9 @@ public class JoyStickController : MonoBehaviour
     //    SceneManager.LoadScene(1);
     //}
 
-    private void DisplayPower()
+    private void DisplayPower(float p)
     {
-        DBjump.text = "DB Jump x" + power;
+        Debug.Log(p + " of powers are left");
+        DBjump.text = "DB Jump x" + p;
     }
 }

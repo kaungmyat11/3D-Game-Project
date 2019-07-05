@@ -68,6 +68,8 @@
     <Compile Include="Assets\_MyAsset\Scripts\JoyStickController.cs" />
     <Compile Include="Assets\_MyAsset\Scripts\PlayerController.cs" />
     <Compile Include="Assets\_MyAsset\Scripts\PlayGameController.cs" />
+    <Compile Include="Assets\_MyAsset\Scripts\RopeControl.cs" />
+    <Compile Include="Assets\_MyAsset\Scripts\RopeSection.cs" />
     <Compile Include="Assets\amusedART\StoneMonster\Script\Animation_Test.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Joystick Pack\Examples\JoystickSetterExample.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="Assets\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\LowPolyGround\Scripts\FreeCamera.cs" />
     <Compile Include="Assets\LowPolyGround\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\TowerCheckpoint.cs" />
     <None Include="Assets\LowPolyGround\Readme_DownLoad Post ProcessingStack.txt" />
     <None Include="Assets\Sets - Gems\Shaders\Gem.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
