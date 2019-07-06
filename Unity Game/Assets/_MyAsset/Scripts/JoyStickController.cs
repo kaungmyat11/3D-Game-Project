@@ -33,7 +33,7 @@ public class JoyStickController : MonoBehaviour
     Vector3 playerMovement;
     Vector3 desiredForward;
     Vector3 Rotation;
-    Vector3 checkPoint;
+    public Vector3 checkPoint;
 
     Quaternion playerRotation = Quaternion.identity;
 

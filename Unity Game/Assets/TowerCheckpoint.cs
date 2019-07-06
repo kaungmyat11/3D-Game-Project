@@ -29,7 +29,7 @@ public class TowerCheckpoint : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Player enter");
-            player.GetComponent<PlayerController>().checkPoint = checkposition;
+            player.GetComponent<JoyStickController>().checkPoint = checkposition;
             animator.enabled = true;
         }
     }
