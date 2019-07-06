@@ -10571,7 +10571,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386500140}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0baabd63587376446abf4dbba3c86275, type: 3}
   m_Name: 
@@ -10598,13 +10598,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386500140}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: efc5fea63bb8e174287c931bf9e96589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 7
-  verticalSpeed: 60
+  verticalSpeed: 50
   turnSpeed: 12
   lives: 3
   power: 0
@@ -10618,6 +10618,7 @@ MonoBehaviour:
   victoryAudio: {fileID: 1158882087}
   joystickInput: {fileID: 1076517671}
   doJump: 0
+  checkPoint: {x: 0, y: 0, z: 0}
 --- !u!54 &1386500143
 Rigidbody:
   m_ObjectHideFlags: 0
