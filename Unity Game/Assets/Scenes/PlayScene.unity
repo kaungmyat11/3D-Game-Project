@@ -10604,7 +10604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardSpeed: 7
-  verticalSpeed: 50
+  verticalSpeed: 35
   turnSpeed: 12
   lives: 3
   power: 0
