@@ -68,6 +68,7 @@ public class JoyStickController : MonoBehaviour
         {
             Debug.Log("First Jump");
             doJump = true;
+            playerRb.velocity = Vector3.zero;
             //animator.SetTrigger("doJump");
             playerRb.AddForce(Vector3.up * verticalSpeed, ForceMode.Impulse);
             isGrounded = false;
@@ -77,6 +78,7 @@ public class JoyStickController : MonoBehaviour
             Debug.Log("Second Jump");
             doJump = true;
             //animator.SetTrigger("doJump");
+            playerRb.velocity = Vector3.zero;
             playerRb.AddForce(Vector3.up * verticalSpeed, ForceMode.Impulse);
             canJump = false;
             power -= 1;
